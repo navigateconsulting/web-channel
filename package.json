@@ -1,0 +1,42 @@
+{
+  "name": "eva-bot",
+  "version": "0.0.1-alpha.1",
+  "description": "EVA Web Chat Component",
+  "main": "eva-bot.js",
+  "module": "eva-bot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navigateconsulting/eva-assister"
+  },
+  "keywords": [
+    "chatbot",
+    "rasa",
+    "rasa core",
+    "rasa nlu",
+    "web component",
+    "assistant"
+  ],
+  "author": "Nishant Shuke <nishant.shuke@navigateconsulting.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navigateconsulting/eva-assister/issues"
+  },
+  "homepage": "https://github.com/navigateconsulting/eva-assister",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/app-layout": "^3.1.0",
+    "@polymer/iron-icons": "^3.0.1",
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-fab": "^3.0.1",
+    "@polymer/paper-icon-button": "^3.0.2",
+    "@polymer/paper-input": "^3.0.2",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wct-mocha": "^1.0.1"
+  }
+}
