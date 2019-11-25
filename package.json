@@ -6,7 +6,7 @@
   "module": "eva-bot.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/navigateconsulting/eva-assister"
+    "url": "https://github.com/navigateconsulting/eva-bot"
   },
   "keywords": [
     "chatbot",
@@ -19,9 +19,9 @@
   "author": "Nishant Shuke <nishant.shuke@navigateconsulting.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/navigateconsulting/eva-assister/issues"
+    "url": "https://github.com/navigateconsulting/eva-bot/issues"
   },
-  "homepage": "https://github.com/navigateconsulting/eva-assister",
+  "homepage": "https://github.com/navigateconsulting/eva-bot",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
     "@polymer/app-layout": "^3.1.0",
