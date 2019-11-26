@@ -1,9 +1,9 @@
 import { LitElement, html, css } from './node_modules/lit-element';
-import '@polymer/paper-fab/paper-fab.js';
-import '@polymer/iron-icons/iron-icons.js';
-import '@polymer/paper-input/paper-input.js';
-import '@polymer/paper-icon-button/paper-icon-button.js';
-import '@polymer/app-layout/app-layout.js';
+import './node_modules/@polymer/paper-fab/paper-fab.js';
+import './node_modules/@polymer/iron-icons/iron-icons.js';
+import './node_modules/@polymer/paper-input/paper-input.js';
+import './node_modules/@polymer/paper-icon-button/paper-icon-button.js';
+import './node_modules/@polymer/app-layout/app-layout.js';
 /**
  * `web-chat`
  * Chat Component For EVA
