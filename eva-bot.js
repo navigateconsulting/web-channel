@@ -29,7 +29,7 @@ class EvaBot extends LitElement {
   constructor() {
     super();
     this.headerText = 'Virtual Assistant';
-    this.headerButtonColor = '#6200EE';
+    this.headerButtonColor = '#007BFF';
     this.chats = [];
     this.message = '';
     this.conversation = this.uuidv4();
@@ -47,8 +47,8 @@ class EvaBot extends LitElement {
       ${this.toggleButtonWindow ?
         html`
       <div class="main-div">
-        <div>
-          <app-header reveals class="header-div">
+        <div class="header-div">
+          <app-header fixed>
             <app-toolbar>
               <div main-title>${this.headerText}</div>
               <paper-icon-button @click="${this.toggleChatWindow}" icon="close"></paper-icon-button>
@@ -96,16 +96,17 @@ class EvaBot extends LitElement {
         display: block;
         font-family: 'Lato', sans-serif;
         padding: 2%;
+        height: 2000px;
       }
       .main-div {
         position: fixed;
-        -webkit-animation: chatwindowmove 0.5s;  /* Safari 4.0 - 8.0 */
-        -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-        animation: chatwindowmove 0.5s;
+        -webkit-animation: chatwindowmove 0.2s;  /* Safari 4.0 - 8.0 */
+        animation: chatwindowmove 0.2s;
+        -webkit-animation-fill-mode: forwards;  /* Safari 4.0 - 8.0 */
         animation-fill-mode: forwards;
         height: 430px;
         width: 350px;
-        bottom: 17%;
+        bottom: 10%;
         right: 5%;
         background-color: white;
         border-radius: 10px;
@@ -189,8 +190,8 @@ class EvaBot extends LitElement {
       #fixedbutton {
         box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
         position: fixed;
-        bottom: 5%;
-        right: 5%;
+        bottom: 6%;
+        right: 3%;
         background-color: var(--backgroundColor);
       }
       #usermessage {
@@ -299,7 +300,7 @@ class EvaBot extends LitElement {
 
   adjustEntityScroll() {
     var scrollDiv = this.shadowRoot.getElementById("chat-inner-div");
-    setTimeout(function(){ 
+    setTimeout(function(){
       scrollDiv.scrollTop = scrollDiv.scrollHeight
      }, 100);
   }

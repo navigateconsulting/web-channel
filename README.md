@@ -1,21 +1,53 @@
-# \<eva-bot\>
+# eva-bot
 
-EVA Web Chat Component
+EVA (Enterprise Virtual Assistant) Web Chat Component made with [Rasa](https://www.rasa.com)
 
-## Install the Polymer-CLI
+![alt text](web-channel.png)
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) and npm (packaged with [Node.js](https://nodejs.org)) installed. Run `npm install` to install your element's dependencies, then run `polymer serve` to serve your element locally.
+Made using Polymer's [lit-element](https://lit-element.polymer-project.org/)
 
-## Viewing Your Element
+## Install
 
-```
-$ polymer serve
-```
-
-## Running Tests
+#### Unpkg
 
 ```
-$ polymer test
+<script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/eva-bot.js"></script>
+
 ```
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+#### NPM
+
+```
+npm install @navigateconsulting/web-channel --save
+
+```
+
+#### Usage
+
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/eva-bot.js"></script>
+  </head>
+  <body>
+    <eva-bot />
+  </body>
+</html>
+```
+
+#### Configurable Variables
+
+Below are the Configurable variables for the web component:
+
+```
+headerText {type: String, default_value: Virtual Assistant}
+
+headerButtonColor {type: String, default_value: #007BFF}
+
+serverUrl {type: String, default_value: http://localhost:5005/webhooks/rest/webhook (Rasa Endpoint)}
+```
+
+#### License
+
+[Apache-2.0](https://github.com/navigateconsulting/virtual-assistant/blob/master/LICENSE)

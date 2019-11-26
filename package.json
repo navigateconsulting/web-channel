@@ -1,12 +1,12 @@
 {
-  "name": "@navigateconsulting/eva-bot",
-  "version": "1.0.1",
+  "name": "@navigateconsulting/web-channel",
+  "version": "1.0.0",
   "description": "EVA Web Chat Component",
   "main": "eva-bot.js",
   "module": "eva-bot.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/navigateconsulting/eva-bot"
+    "url": "https://github.com/navigateconsulting/web-channel"
   },
   "keywords": [
     "chatbot",
@@ -17,11 +17,11 @@
     "assistant"
   ],
   "author": "Nishant Shuke <nishant.shuke@navigateconsulting.in>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/navigateconsulting/eva-bot/issues"
+    "url": "https://github.com/navigateconsulting/web-channel/issues"
   },
-  "homepage": "https://github.com/navigateconsulting/eva-bot",
+  "homepage": "https://github.com/navigateconsulting/web-channel",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
     "@polymer/app-layout": "^3.1.0",
