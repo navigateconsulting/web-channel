@@ -1,5 +1,5 @@
 {
-  "name": "eva-bot",
+  "name": "@navigateconsulting/eva-bot",
   "version": "0.0.1-alpha.1",
   "description": "EVA Web Chat Component",
   "main": "eva-bot.js",
