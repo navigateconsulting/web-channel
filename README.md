@@ -2,7 +2,7 @@
 
 EVA (Enterprise Virtual Assistant) Web Chat Component made with [Rasa](https://www.rasa.com)
 
-![alt text](web-channel.png)
+![Web Channel](web-channel.png)
 
 Made using Polymer's [lit-element](https://lit-element.polymer-project.org/)
 
@@ -11,7 +11,7 @@ Made using Polymer's [lit-element](https://lit-element.polymer-project.org/)
 #### Unpkg
 
 ```
-<script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/eva-bot.js"></script>
+<script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/build/default/eva-bot.js"></script>
 
 ```
 
@@ -28,7 +28,7 @@ npm install @navigateconsulting/web-channel --save
 <!doctype html>
 <html lang="en">
   <head>
-    <script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/eva-bot.js"></script>
+    <script type="module" src="https://unpkg.com/@navigateconsulting/web-channel@latest/build/default/eva-bot.js"></script>
   </head>
   <body>
     <eva-bot />

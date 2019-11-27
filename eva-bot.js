@@ -96,7 +96,6 @@ class EvaBot extends LitElement {
         display: block;
         font-family: 'Lato', sans-serif;
         padding: 2%;
-        height: 2000px;
       }
       .main-div {
         position: fixed;
