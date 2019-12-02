@@ -18,11 +18,8 @@ class EvaBot extends LitElement {
     return {
       headerText: String,
       headerButtonColor: String,
-      chats: Array,
-      message: String,
-      conversation: String,
+      headerButtonTextColor: String,
       serverUrl: String,
-      toggleButtonWindow: Boolean,
     }
   };
 
@@ -30,6 +27,7 @@ class EvaBot extends LitElement {
     super();
     this.headerText = 'Virtual Assistant';
     this.headerButtonColor = '#007BFF';
+    this.headerButtonTextColor = '#FFF';
     this.chats = [];
     this.message = '';
     this.conversation = this.uuidv4();
@@ -42,6 +40,7 @@ class EvaBot extends LitElement {
       <style>
         .header-div, #fixedbutton {
           --backgroundColor: ${this.headerButtonColor};
+          --color: ${this.headerButtonTextColor};
         }
       </style>
       ${this.toggleButtonWindow ?
@@ -50,8 +49,8 @@ class EvaBot extends LitElement {
         <div class="header-div">
           <app-header fixed>
             <app-toolbar>
-              <div main-title>${this.headerText}</div>
-              <paper-icon-button @click="${this.toggleChatWindow}" icon="close"></paper-icon-button>
+              <div main-title><span>${this.headerText}</span></div>
+              <paper-icon-button class="poly-icon" @click="${this.toggleChatWindow}" icon="close"></paper-icon-button>
             </app-toolbar>
           </app-header>
         </div>
@@ -85,7 +84,7 @@ class EvaBot extends LitElement {
         </div>
       </div>
       ` : html`
-      <paper-fab noink @click="${this.toggleChatWindow}" id="fixedbutton" icon="code" title="open-chat"></paper-fab>
+      <paper-fab noink @click="${this.toggleChatWindow}" class="poly-icon" id="fixedbutton" icon="code" title="open-chat"></paper-fab>
       `}
     `;
   }
@@ -121,6 +120,13 @@ class EvaBot extends LitElement {
       .header-div span {
         font-family: 'Lato', sans-serif !important;
         margin-left: 0px;
+        color: var(--color);
+      }
+      .header-div .poly-icon {
+        color: var(--color);
+      }
+      .poly-icon {
+        color: var(--color);
       }
       .chat-inner-scroll-div {
         background-color: #e3dfd9;

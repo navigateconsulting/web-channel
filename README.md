@@ -45,6 +45,8 @@ headerText {type: String, default_value: Virtual Assistant}
 
 headerButtonColor {type: String, default_value: #007BFF}
 
+headerButtonTextColor {type: String, default_value: #FFF}
+
 serverUrl {type: String, default_value: http://localhost:5005/webhooks/rest/webhook (Rasa Endpoint)}
 ```
 
